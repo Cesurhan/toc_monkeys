@@ -1,4 +1,4 @@
 class Event < ApplicationRecord
-  belongs_to :workshop
+  has_one :workshop
   belongs_to :sponsor
 end

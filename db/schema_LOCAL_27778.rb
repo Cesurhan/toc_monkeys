@@ -10,8 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170327150549) do
-
+ActiveRecord::Schema.define(version: 20170327135534) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,11 +20,13 @@ ActiveRecord::Schema.define(version: 20170327150549) do
     t.string   "image"
     t.string   "location"
     t.integer  "spaces_available"
+    t.integer  "workshop_id"
     t.boolean  "status"
     t.integer  "sponsor_id"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
     t.index ["sponsor_id"], name: "index_events_on_sponsor_id", using: :btree
+    t.index ["workshop_id"], name: "index_events_on_workshop_id", using: :btree
   end
 
   create_table "sponsors", force: :cascade do |t|
@@ -51,8 +52,6 @@ ActiveRecord::Schema.define(version: 20170327150549) do
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
-  end
-
   create_table "workshops", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
@@ -61,10 +60,8 @@ ActiveRecord::Schema.define(version: 20170327150549) do
     t.string   "link_to_github"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
-    t.integer  "event_id"
-    t.index ["event_id"], name: "index_workshops_on_event_id", using: :btree
   end
 
   add_foreign_key "events", "sponsors"
-  add_foreign_key "workshops", "events"
+  add_foreign_key "events", "workshops"
 end
