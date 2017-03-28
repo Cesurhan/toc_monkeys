@@ -9,6 +9,7 @@
   </head>
 
   <body>
+    <%= render './shared/navbar' unless current_page?('/') || current_page?('/events') %>
     <%= yield %>
   </body>
 </html>
