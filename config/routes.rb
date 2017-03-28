@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-
+  devise_for :users
 
   get "book_in_company/home", :to => "book_in_company#home"
 
