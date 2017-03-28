@@ -5,6 +5,6 @@ FactoryGirl.define do
     location "MyString"
     spaces_available 1
     status false
-    sponsor nil
+    sponsor "awesome"
   end
 end
