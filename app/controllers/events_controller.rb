@@ -4,8 +4,5 @@ class EventsController < ApplicationController
     @events = Event.all
   end
 
-  def show
-    @event = Event.first
-  end
 
 end
