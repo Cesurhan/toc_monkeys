@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  root :to => 'pages#homepage'
 
 
   get "book_in_company/home", :to => "book_in_company#home"
