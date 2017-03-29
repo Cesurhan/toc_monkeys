@@ -1,11 +1,9 @@
-<% unless current_page?('/') || current_page?('/events') %>
-  <nav>
-    <div class="Link btns">
-      <ul>
-        <li><%= link_to "Join TOC", attend_home_path %></li>
-        <li><%= link_to "InCompany", book_in_company_home_path %></li>
-        <li><%= link_to "Host TOC", sponsor_home_path %></li>
-      </ul>
-    </div>
-  </nav>
-<% end %>
+<nav>
+  <div class="Link btns">
+    <ul>
+      <li><%= link_to "Join TOC", attend_path %></li>
+      <li><%= link_to "InCompany", in_company_path %></li>
+      <li><%= link_to "Host TOC", sponsor_path %></li>
+    </ul>
+  </div>
+</nav>
