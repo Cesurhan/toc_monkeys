@@ -3,10 +3,10 @@ Rails.application.routes.draw do
 
   devise_for :users
 
-  get "book_in_company/home", :to => "pages#incompany"
+  get "in_company", to:  "pages#incompany"
 
-  get "sponsor/home", :to => "pages#sponsor"
+  get "sponsor", to:  "pages#sponsor"
 
-  get "attend/home", :to => "pages#public"
+  get "attend", to: "pages#attend"
 
 end

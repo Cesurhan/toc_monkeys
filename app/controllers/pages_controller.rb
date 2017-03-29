@@ -2,12 +2,12 @@ class PagesController < ApplicationController
   def homepage
   end
 
-  def public
+  def attend
   end
 
   def incompany
   end
 
   def sponsor
-  end  
+  end
 end
