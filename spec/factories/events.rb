@@ -5,6 +5,8 @@ FactoryGirl.define do
     location "MyString"
     spaces_available 1
     status false
-    sponsor "awesome"
+    sponsor nil
+    workshop nil
+    date { Faker::Date }
   end
 end

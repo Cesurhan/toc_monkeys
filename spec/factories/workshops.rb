@@ -5,6 +5,5 @@ FactoryGirl.define do
     image "MyString"
     link_to_live_demo "MyString"
     link_to_github "MyString"
-    event nil
   end
 end
