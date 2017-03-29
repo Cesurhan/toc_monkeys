@@ -1,0 +1,44 @@
+.btn-costs {
+  width: 25px;
+  height: 25px;
+  margin-right: 50px;
+  line-height: 1.33;
+  border-radius: 50%;
+  background-color: rgb(176, 176, 176);
+  text-align: center;
+  font-size: 14px;
+}
+
+.horizontal{
+    background-color: rgb(176, 176, 176);
+    display: flex;
+    height: 5px;
+    width: 100%;
+    right: 0px;
+}
+
+// .row-fluid {
+//   display: flex;
+//   justify-content: center;
+// }
+
+// .circle-div, .line {
+//   background-color: rgb(147, 147, 147);
+//   vertical-align: middle;
+//   display: flex;
+// }
+//
+// .circle-div {
+//   border-radius: 100%;
+//   width: 20px;
+//   height: 20px;
+//   right: 20px;
+//   position: relative;
+//
+// }
+//
+// .line {
+//   height: 3px;
+//   width: 500px;
+//   position: absolute;
+// }

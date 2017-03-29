@@ -24,4 +24,5 @@ RSpec.describe PagesController, type: :controller do
        expect(response).to have_http_status(:success)
     end
   end
+
 end
