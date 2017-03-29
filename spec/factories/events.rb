@@ -7,6 +7,6 @@ FactoryGirl.define do
     status false
     sponsor nil
     workshop nil
-    date { Faker::Date }
+    date  { Faker::Date }
   end
 end
