@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   end
 
   def attend
+    @events = Event.all
   end
 
   def incompany
