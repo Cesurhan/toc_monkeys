@@ -1,15 +1,34 @@
-<div class="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Slider - Range with fixed maximum</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+
+
+<div>
   <h2>Costs Calculation</h2>
-  <h3>Enter number of participants</h3>
-  <div class="modal-body">
-    <div class="row-fluid">
-      <div class="amount">the amount</div>
-      <% 5.times do |i| %>
-        <button type="button" uncheckable class="btn  btn-xl" id="" >
-        </button>
-      <% end %>
+  <h3>
+  <div class="cost-slider">
+    <label for="amount">Enter number of participants</label>
+    <input type="text" id="amount" readonly style="border:0; width: 40px"> participants
+    </p>
+    <div id="cost">2500 EUR</div>
+    <div id="slider-range-max"></div>
+
+    <div class="part-count">
+      <div class="0p">0</div>
+      <div class="20p">20</div>
+      <div class="40p">40</div>
+      <div class="60p">60</div>
+      <div class="80p">80</div>
     </div>
   </div>
+</div>
 
 
   <p>* Contact us to know more about our special discounts</p>
@@ -19,6 +38,4 @@
   <h3>Talk to us</h3>
 </div>
 
-<script type="text/javascript">
-
-</script>
+</body>
