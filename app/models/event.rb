@@ -3,15 +3,11 @@ class Event < ApplicationRecord
   belongs_to :sponsor
 
   def self.public_events
-    debugger
-    events = self.select { |event| !event.status }
-    debugger
-    events
+    self.select { |event| event.status }
   end
 
   def self.incompany_events
-    events = self.select { |event| !event.status }
-    events
+    self.select { |event| !event.status }
   end
 
 end

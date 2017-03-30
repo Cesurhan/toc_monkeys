@@ -8,12 +8,12 @@
         <th>Title</th>
         <th>Date</th>
         <th>Spaces available</th>
-        <th>show</th>
-        <th>edit</th>
-        <th>delete</th>
+        <th></th>
+        <th></th>
+        <th></th>
       </tr>
 
-      <% @events.public_events each do |event| %>
+      <% @events.public_events.each do |event| %>
       <tr>
         <td><%= event.title %></td>
         <td><%= event.sponsor.company_name %></td>
@@ -32,12 +32,12 @@
         <th>Title</th>
         <th>Date</th>
         <th>Spaces available</th>
-        <th>show</th>
-        <th>edit</th>
-        <th>delete</th>
+        <th></th>
+        <th></th>
+        <th></th>
       </tr>
 
-      <% @events.incompany_events each do |event| %>
+      <% @events.incompany_events.each do |event| %>
       <tr>
         <td><%= event.title %></td>
         <td><%= event.sponsor.company_name %></td>
