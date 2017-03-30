@@ -7,4 +7,7 @@ Rails.application.routes.draw do
   get "sponsor", to:  "pages#sponsor"
   get "attend", to: "pages#attend"
 
+  namespace :admin do
+    resources :events
+  end
 end
