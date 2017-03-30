@@ -1,1 +1,8 @@
 <h1>Admin Sponsor Section</h1>
+<% @sponsors.each do |sponsor| %>
+<p><%= sponsor.company_name %></p>
+<p><%= sponsor.logo %></p>
+<%= button_to "[Edit]", edit_sponsor_path(sponsor.id) %>
+<%= button_to "[Delete]", sponsor_path(sponsor.id), method: :delete, data: { confirm: "Are you sure?" } %>
+</strong>
+<% end %>
