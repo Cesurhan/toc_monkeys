@@ -18,6 +18,11 @@ class PagesController < ApplicationController
 
   def incompany
     @workshops = Workshop.all
+    @sponsors = Sponsor.all
+  end
+
+  def attend
+    @sponsors = Sponsor.all
   end
 
 
