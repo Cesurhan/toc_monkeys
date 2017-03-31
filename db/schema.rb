@@ -10,12 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20170329083236) do
-
-=======
 ActiveRecord::Schema.define(version: 20170330151545) do
->>>>>>> Schema wth incompany
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -73,8 +68,6 @@ ActiveRecord::Schema.define(version: 20170330151545) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
-  end
-
   create_table "workshops", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
@@ -83,12 +76,9 @@ ActiveRecord::Schema.define(version: 20170330151545) do
     t.string   "link_to_github"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
-    t.integer  "event_id"
-    t.index ["event_id"], name: "index_workshops_on_event_id", using: :btree
   end
 
   add_foreign_key "events", "sponsors"
   add_foreign_key "events", "workshops"
   add_foreign_key "incompanies", "workshops"
-  add_foreign_key "workshops", "events"
 end
