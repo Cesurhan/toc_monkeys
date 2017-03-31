@@ -1,0 +1,2 @@
+class Sponsorrequest < ApplicationRecord
+end
