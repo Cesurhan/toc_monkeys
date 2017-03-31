@@ -1,14 +1,11 @@
 
 <section class="container">
-  <h1>
-    Proudly sponsored by
-  </h1>
+  <h1> Proudly sponsored by </h1>
 
   <div class="col-md-4">
-        <% @sponsors.each do |event| %>
+        <% @sponsors.each do |sponsor| %>
     <div class="card-block">
-      <img src="https://res.cloudinary.com/dnbyfobad/image/upload/v1490716457/event1_iweuk3.jpg" height=50/>
-      <p class="card-text"><%= sponsor.logo %></p>
+      <%= image_tag sponsor.logo, height: '50' %>
       </div>
     </div>
   </section>

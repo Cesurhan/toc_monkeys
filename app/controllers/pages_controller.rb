@@ -4,12 +4,15 @@ class PagesController < ApplicationController
  end
 
  def public
+   @sponsors = Sponsor.all
  end
 
  def incompany
+   @sponsors = Sponsor.all
  end
 
  def sponsor
+   @sponsors = Sponsor.all
  end
 
 end
