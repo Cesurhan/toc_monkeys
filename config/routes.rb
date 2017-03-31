@@ -15,4 +15,7 @@ Rails.application.routes.draw do
 
   resources :workshops
   resources :sponsorrequests
+
+  resources :sponsorrequests,  only: [:new, :create]
+
 end
