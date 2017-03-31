@@ -1,5 +1,5 @@
 class Incompany < ApplicationRecord
-  has_one :workshop
+  belongs_to :workshop
 
   validates :first_name, presence: true
   validates :last_name, presence: true
@@ -7,7 +7,7 @@ class Incompany < ApplicationRecord
   validates :email, presence: true
   validates :date, presence: true
   validates :spaces_available, presence: true
-  validates :wordshop, presence:true
+  validates :workshop, presence:true
 
 
 end

@@ -1,4 +1,6 @@
 class Admin::IncompaniesController < ApplicationController
+  before_action :set_incompany, only: [:show, :edit, :update, :destroy]
+
   def index
      @incompanies = Incompany.all
   end
@@ -40,6 +42,6 @@ private
   end
 
   def incompany_params
-    params.require(:incompany).permit(:first_name, :last_name, :company_name, :email, :date, :spaces_available, :comments, :wordshop_id)
+    params.require(:incompany).permit(:first_name, :last_name, :company_name, :email, :date, :spaces_available, :comments, :workshop_id)
   end
 end
