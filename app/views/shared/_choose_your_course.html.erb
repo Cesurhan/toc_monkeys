@@ -1,0 +1,22 @@
+<section class='jumbotron'>
+  <div class="workshop-header">
+    <h3>Choose your course</h3>
+    <p>Get to know our different types of workshops</p>
+  </div>
+
+  <section class="carousel slide" data-ride="carousel">
+    <div class="row" align="center">
+      <% @workshops.each do |workshop| %>
+      <div class="col-md-4">
+        <div class="card-block">
+          <%= image_tag workshop.image, class: "workshop-image" %>
+          <h3 class="workshop-title">
+            <%= workshop.title %></h3>
+          <p class="workshop-description">
+            <%= workshop.description %></p>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </section>
+</section>
