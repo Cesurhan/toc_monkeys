@@ -6,6 +6,7 @@ class PagesController < ApplicationController
   end
 
   def incompany
+    @workshops = Workshop.all
   end
 
   def sponsor
