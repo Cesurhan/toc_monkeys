@@ -66,3 +66,4 @@ gem 'rails-controller-testing'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise', '~> 4.2'
+gem 'carrierwave', '0.11.2'
