@@ -1,0 +1,39 @@
+<<<<<<< HEAD
+<%= link_to "Back", admin_workshops_path, class: "btn btn-warning" %>
+=======
+<%= link_to "Back", admin_workshops_path, class: "btn btn-primary" %>
+>>>>>>> 2bd0ced1900b2280716d1c3179b0b009f86401d6
+<hr>
+<div class="col-md-4 col-sm-offset-4">
+  <%= form_for [:admin, @workshop] do |f|%>
+  <div class="form-group">
+    <%= f.label "Add New Workshop"%>
+    <%= f.text_field :title,  :class => 'form-control', :placeholder => 'Title',  autocomplete: "off" %>
+  </div>
+  <div class="form_group">
+    <%= f.label :description %>
+    <%= f.text_field :description, :class => 'form-control', :placeholder => 'Description',  autocomplete: "off" %>
+  </div>
+  <div class="form_group">
+    <%= f.label :image %>
+    <%= f.text_field :image, :class => 'form-control', :placeholder => 'Image',  autocomplete: "off" %>
+  </div>
+  <div class="form_group">
+    <%= f.label :link_to_live_demo %>
+    <%= f.text_field :link_to_live_demo, :class => 'form-control', :placeholder => 'Link to live demo',  autocomplete: "off" %>
+  </div>
+  <div class="form_group">
+    <%= f.label :link_to_github %>
+    <%= f.text_field :link_to_github, :class => 'form-control', :placeholder => 'Link to github',  autocomplete: "off" %>
+  </div>
+  <hr>
+
+  <div class="actions">
+<<<<<<< HEAD
+    <%= f.submit (@workshop.new_record? ? "Add" : "Update"), :class => "btn btn-primary" %>
+=======
+    <%= f.submit (@workshop.new_record? ? "Add" : "Update"), :class => "btn btn-default" %>
+>>>>>>> 2bd0ced1900b2280716d1c3179b0b009f86401d6
+  </div>
+  <% end %>
+</div>
