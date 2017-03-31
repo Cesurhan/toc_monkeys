@@ -2,8 +2,8 @@ require 'rails_helper'
 
 RSpec.describe "pages/attend.html.erb",  type: :view do
 
-    it "Should render what you will learn section" do
+    it "Should render get ready for day section" do
       render 
-      expect(rendered).to have_content("What You Will Learn")
+      expect(rendered).to have_content("Get Ready for the Day")
     end
   end
