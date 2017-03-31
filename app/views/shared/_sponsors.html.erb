@@ -1,0 +1,14 @@
+
+<section class="container">
+  <h1> Proudly sponsored by </h1>
+
+  <div class="col-md-4">
+        <% @sponsors.each do |sponsor| %>
+    <div class="card-block">
+      <%= image_tag sponsor.logo, height: '50' %>
+      </div>
+    </div>
+  </section>
+  <% end %>
+
+</div>
