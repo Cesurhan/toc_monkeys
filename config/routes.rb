@@ -11,8 +11,8 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :sponsors
-
-    resources :workshops
-
   end
+
+  resources :workshops
+  resources :sponsorrequests
 end

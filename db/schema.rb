@@ -30,18 +30,6 @@ ActiveRecord::Schema.define(version: 20170331094714) do
     t.index ["workshop_id"], name: "index_events_on_workshop_id", using: :btree
   end
 
-  create_table "sponsor_requests", force: :cascade do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "company_name"
-    t.string   "email"
-    t.date     "date"
-    t.integer  "spaces_available"
-    t.text     "comments"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
-  end
-
   create_table "sponsorrequests", force: :cascade do |t|
     t.string   "first_name"
     t.string   "last_name"
