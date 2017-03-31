@@ -2,7 +2,9 @@
 <% @sponsors.each do |sponsor| %>
 <p><%= sponsor.company_name %></p>
 <p><%= sponsor.logo %></p>
-<%= button_to "[Edit]", edit_sponsor_path(sponsor.id) %>
-<%= button_to "[Delete]", sponsor_path(sponsor.id), method: :delete, data: { confirm: "Are you sure?" } %>
+<%= link_to "[Edit]", edit_admin_sponsor_path(sponsor.id) %>
+<%= link_to "[Delete]", admin_sponsor_path(sponsor.id), method: :delete, data: { confirm: "Are you sure?" } %>
 </strong>
 <% end %>
+<hr>
+<%= link_to "New", new_admin_sponsor_path %>

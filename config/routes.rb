@@ -3,10 +3,14 @@ Rails.application.routes.draw do
 
   devise_for :users
 
+
   get "in_company", to:  "pages#incompany"
   get "sponsor", to:  "pages#sponsor"
   get "attend", to: "pages#attend"
+
   namespace :admin do
     resources :sponsors
+
+
   end
 end
