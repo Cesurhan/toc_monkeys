@@ -1,0 +1,10 @@
+<h1>Admin Sponsor Section</h1>
+<% @sponsors.each do |sponsor| %>
+<p><%= sponsor.company_name %></p>
+<p><%= sponsor.logo %></p>
+<%= link_to "[Edit]", edit_admin_sponsor_path(sponsor.id) %>
+<%= link_to "[Delete]", admin_sponsor_path(sponsor.id), method: :delete, data: { confirm: "Are you sure?" } %>
+</strong>
+<% end %>
+<hr>
+<%= link_to "New", new_admin_sponsor_path %>

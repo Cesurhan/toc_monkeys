@@ -3,6 +3,7 @@ class PagesController < ApplicationController
  def homepage
  end
 
+
  def public
    @sponsors = Sponsor.all
  end
@@ -14,5 +15,10 @@ class PagesController < ApplicationController
  def sponsor
    @sponsors = Sponsor.all
  end
+
+  def incompany
+    @workshops = Workshop.all
+  end
+
 
 end
