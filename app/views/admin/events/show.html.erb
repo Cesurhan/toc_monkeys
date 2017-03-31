@@ -1,0 +1,16 @@
+<div class="container">
+  <h3>Event details</h3>
+
+  <%= image_tag @event.image %>
+  <label>Title: </label><p><%= @event.title %></p>
+  <label>Location: </label><p><%= @event.location %></p>
+  <label>Spaces available: </label><p><%= @event.spaces_available %></p>
+  <label>Workshop: </label><p><%= @event.workshop != nil ? @event.workshop.title : "No workshop" %></p>
+  <label>Public: </label><p><%= @event.status ? "public" : "in-company"  %></p><br>
+
+  <label>Sponsor:</label>
+  <p><%= @event.sponsor.company_name %></p>
+  <p><%= image_tag @event.sponsor.logo %></p>
+
+  <%= link_to "[back]", admin_events_path %>
+</div>
