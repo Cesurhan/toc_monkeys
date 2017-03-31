@@ -1,0 +1,32 @@
+<%= form_for [:admin, @sponsorrequest] do |f| %>
+<div>
+  <%= f.label :company_name %>
+  <%= f.text_field :company_name %>
+</div>
+<div>
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name %>
+</div>
+<div>
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name %>
+</div>
+<div>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+</div>
+<div>
+  <%= f.label :date %>
+  <%= f.text_field :date %>
+</div>
+<div>
+  <%= f.label :spaces_available %>
+  <%= f.text_field :spaces_available %>
+</div>
+<div>
+  <%= f.label :comments %>
+  <%= f.text_field :comments %>
+</div>
+<%= f.submit (@sponsorrequest.new_record? ? "Create" : "Update"), class: "btn btn-default" %>
+<% end %>
+<%= link_to "Back to Requests", admin_sponsorrequests_path, class: "btn btn-default" %>

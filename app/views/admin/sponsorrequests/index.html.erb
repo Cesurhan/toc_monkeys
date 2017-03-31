@@ -1,0 +1,10 @@
+<h1>Admin Sponsor Requests Section</h1>
+<% @sponsorrequests.each do |sponsorrequest| %>
+
+<h3><%= sponsorrequest.company_name %></h3>
+
+<%= link_to "View Request", admin_sponsorrequest_path(sponsorrequest.id), class: "btn btn-default" %>
+<%= link_to "Edit Request", edit_admin_sponsorrequest_path(sponsorrequest.id), class: "btn btn-default" %>
+<%= link_to "Delete Request", admin_sponsorrequest_path(sponsorrequest.id), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default" %>
+<% end %>
+<hr>

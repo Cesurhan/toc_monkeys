@@ -20,5 +20,8 @@ class PagesController < ApplicationController
     @workshops = Workshop.all
   end
 
+  def sponsor
+    @sponsorrequest = Sponsorrequest.new
+  end
 
 end

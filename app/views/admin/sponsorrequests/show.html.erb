@@ -1,0 +1,24 @@
+<h1>Sponsor Request</h1>
+
+<h4>Company</h4>
+<p><%= @sponsorrequest.company_name %></p>
+
+<h4>Contact Info</h4>
+<p>First Name:
+  <%= @sponsorrequest.first_name %></p>
+<p>Last Name:
+  <%= @sponsorrequest.last_name %></p>
+<p>E-mail:
+  <%= @sponsorrequest.email %></p>
+
+<h4>Event Info</h4>
+<p>Available Spaces:
+  <%= @sponsorrequest.spaces_available %></p>
+<p>Date:
+  <%= @sponsorrequest.date %></p>
+
+<h4>Comments</h4>
+<p>
+  <%= @sponsorrequest.comments %></p>
+<%= link_to "Convert to Sponsor", class: "btn btn-default" %>
+<%= link_to "Back to Requests", admin_sponsorrequests_path, class: "btn btn-default" %>
