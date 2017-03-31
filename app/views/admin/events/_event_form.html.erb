@@ -11,7 +11,7 @@
   <label>location</label>
   <%= f.text_field :location %><br>
   <label>Available spaces</label>
-  <%= f.number_field :spaces_available %><br>
+  <%= f.number_field :spaces_available, min: 0 %><br>
   <label>Workhop:</label>
    <%= f.collection_select(:workshop_id, Workshop.all, :id, :title, {include_blank: 'No workshop'}) %><br>
   <label>Date:</label>
