@@ -8,9 +8,8 @@ Rails.application.routes.draw do
   get "attend", to: "pages#attend"
 
   namespace :admin do
+    resources :events
     resources :sponsors
-
     resources :workshops
-
   end
 end
