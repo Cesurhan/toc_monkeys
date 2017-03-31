@@ -6,7 +6,8 @@ class PagesController < ApplicationController
   end
 
   def incompany
-    @workshops = Workshop.all
+     @workshops = Workshop.all
+     @incompany=Incompany.new
   end
 
   def sponsor
