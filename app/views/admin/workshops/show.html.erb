@@ -1,0 +1,31 @@
+<%= link_to "Back", admin_workshops_path, class: "btn btn-primary" %>
+<hr>
+<div class="jumbotron">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-2">
+      <%= image_tag @workshop.image, class: "workshop-image" %>
+    </div>
+    <div class="col-md-4">
+      <h2><%= @workshop.title %></h2>
+      <ul>
+        <li>
+          <b>Description:
+          </b>
+          <%= @workshop.description %></li>
+        <li>
+          <b>Demo Link:
+          </b>
+          <a href="#"><%= @workshop.link_to_live_demo %></a>
+        </li>
+        <li>
+          <b>Github link:
+          </b>
+          <a href="#"><%= @workshop.link_to_github %></a>
+        </li>
+        <li>
+          <b>Created at:
+          </b><%= @workshop.created_at %></li>
+      </div>
+    </ul>
+  </div>
+</div>

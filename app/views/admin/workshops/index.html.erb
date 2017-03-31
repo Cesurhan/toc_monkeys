@@ -1,0 +1,17 @@
+<%= link_to "Add New Workshop", new_admin_workshop_path, class: "btn btn-default"%>
+<hr>
+<div class="row">
+  <% @workshops.each do |workshop|%>
+  <div class="col-md-2">
+    <div class="thumbnail text-center">
+      <%= image_tag workshop.image, style: 'height:10em'%>
+      <div class="caption">
+        <h3><%= workshop.title %></h3>
+        <p><%= workshop.description%></p>
+      </p>
+      <%= link_to "View", admin_workshop_path(workshop.id), class: "btn btn-primary"%>
+    </div>
+  </div>
+</div>
+<%end%>
+</div>
