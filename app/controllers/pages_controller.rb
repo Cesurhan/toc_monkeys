@@ -1,15 +1,23 @@
 class PagesController < ApplicationController
-  def homepage
-  end
 
   def attend
     @events = Event.all
   end
 
-  def incompany
-    @workshops = Workshop.all
-  end
+ def homepage
+ end
 
-  def sponsor
-  end
+
+ def public
+   @sponsors = Sponsor.all
+ end
+
+ def incompany
+   @sponsors = Sponsor.all
+  @workshops = Workshop.all
+ end
+
+ def sponsor
+   @sponsors = Sponsor.all
+ end
 end
