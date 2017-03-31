@@ -1,0 +1,54 @@
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <%= form_tag(root_path, :method => "get", id: "search-form", class: "input-group") do %>
+      <%= text_field_tag :search, params[:search], placeholder: "Search Company", class: "form-control" %>
+      <span class="input-group-btn">
+        <%= submit_tag "Search", :name => nil, class: "btn btn-default" %>
+      </span>
+      <% end %>
+    </div>
+    <!-- /input-group -->
+  </div>
+  <!-- /.col-lg-6 -->
+</div>
+<hr>
+<% if !@orders.nil? %>
+  <table>
+    <tr>
+      <th style="width: 20%">first_name</th>
+      <th style="width: 20%">last_name</th>
+      <th style="width: 20%">company_name</th>
+      <th style="width: 20%">email</th>
+      <th style="width: 20%">date</th>
+      <th style="width:20%" class="text-right">Total Price</th>
+    </tr>
+    <% @companies.each do |company|%>
+    <tr>
+      <%= company.first_name class: "form-control" = %>
+      <%= company.last_name class: "form-control"%>
+      <%= company.company_name class: "form-control"%>
+      <%= company.email class: "form-control"%>
+      <%= company.date class: "form-control"%>
+      <td style="width: 20%"><%= link_to "View", admin_incompany_path(company) %></td>
+      <td style="width: 20%"><%= link_to "Edit", edit_admin_incompany_path(company) %></td>
+      <td style="width: 20%"><%= link_to "Destroy", admin_incompany_path(company) method: :delete, data: {confirm: "Are you sure?"}, class:"btn btn-danger"%></td>
+    </tr>
+    <% end %>
+  </table>
+<% end %>
+
+  <div class="col-sm-6 col-md-4">
+    <table>
+      <tr>
+        <th style="width: 20%">Ordernumber</th>
+        <th style="width: 20%">Order date</th>
+        <th style="width:20%" class="text-right">Total Price</th>
+      </tr>
+    <%= company.spaces_available class: "form-control"%>
+    <%= company.commentsclass: "form-control"%>
+  </div>
+  <%= link_to "Update", incompany_path(company.id), class: "btn btn-default"%>
+  <%= link_to "Destroy", incompany_path(company.id), class: "btn btn-default"%>
+<%end%>
+</div>

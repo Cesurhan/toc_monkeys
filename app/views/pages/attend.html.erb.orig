@@ -1,0 +1,11 @@
+<h1>Attend</h1>
+<<<<<<< HEAD
+<%= render 'shared/top_banner' %>
+<%= render 'shared/get_ready_for_day' %>
+<%= render 'shared/what_you_will_learn' %>                           
+<%= render "shared/newsletter"%>
+
+=======
+
+<%= render "./shared/testimonials" %>
+>>>>>>> Review comments
