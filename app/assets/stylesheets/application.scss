@@ -4,7 +4,7 @@
 .homepage-banner {
     background-image: url('http://tasteofcode.nl/images/codaisseur-toc-19.jpg');
     background-repeat: no-repeat;
-    height: 100em;
+    height: 80em;
   }
 
 .homepage-highlighter {
@@ -14,5 +14,21 @@
   margin-right: 30em;
   padding-top: 3em;
   padding-bottom: 3em;
+}
 
+.attend-highlighter {
+  background-color: rgba(85,170,164, 0.8);
+  color: whitesmoke;
+  margin-left: 30em;
+  margin-right: 30em;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.workshop-image{
+  height: 10em;
+}
+
+.sponsor-image{
+  height: 10em;
 }

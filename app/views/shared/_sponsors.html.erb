@@ -1,14 +1,17 @@
+<section class="jumbotron">
+  <div class="text-center">
+    <h3>
+      Proudly sponsored by
+    </h3>
+  </div>
 
-<section class="container">
-  <h1> Proudly sponsored by </h1>
-
-  <div class="col-md-4">
-        <% @sponsors.each do |sponsor| %>
-    <div class="card-block">
-      <%= image_tag sponsor.logo, height: '50' %>
+  <div class="row">
+    <% @sponsors.each do |sponsor| %>
+    <div class="col-md-4 text-center">
+      <div class="card-block">
+        <%= image_tag sponsor.logo, class: "sponsor-image" %>
       </div>
     </div>
-  </section>
-  <% end %>
-
-</div>
+    <% end %>
+  </div>
+</section>

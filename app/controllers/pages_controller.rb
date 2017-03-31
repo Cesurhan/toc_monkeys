@@ -23,6 +23,7 @@ class PagesController < ApplicationController
 
   def attend
     @sponsors = Sponsor.all
+    @workshops = Workshop.all
   end
 
 
